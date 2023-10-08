@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruth Lu</title>
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#F15025">
+  <meta name="msapplication-TileColor" content="#F15025">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Bitter&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </div>
+
+  <div class="splash">
+    <div class="intro">
+      <span id="hi">Hello, I'm Ruth.</span>
+    </div>
+    <div class="tagline">
+      Electrical engineering and computer science student @ MIT
+    </div>
+  </div>
+
+  <div id="about" class="splash">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Ruth, a sophomore at MIT studying EECS. I love programming and algorithms, especially applying them in
+      practical ways. Although I've been interested in STEM from a young age, I began pursuing CS in earnest in high
+      school through personal projects, algorithmic coding competitions, and school clubs. Since then, I've learned a
+      lot, exploring new technologies and electrical engineering, which I enjoy because I get to work with my hands.
+      When I'm not studying or making something, I'm probably birdwatching, drawing, or baking.
+    </p>
+    <p>
+      Currently, I'm working on an implementing an out-of-core LU decomposition in the Julia Lab. I hope to gain a
+      better understanding of high perfomance computing and distributed algorithms through the research. I'm also
+      learning more about autonomous machines through MIT's New Engineering Education Threads and by being a developer
+      on Battlecode.
+    </p>
+    <p><b>Skills:</b> C++, Python, Java, Assembly, Minispec/Bluespec, SQL, HTML/CSS/JS, Julia, SciKitLearn, Tensorflow
+    </p>
+    <p><b>Working on:</b> distibuted computing, MATLAB</p>
+    <p><b>Completed coursework:</b> Differential Equations, Linear Algebra, Discrete Math, Fundamentals of Programming
+      (Python)</p>
+    <p><b>Current coursework:</b> Systems and controls, algorithms</p>
+    <p><b>Awards:</b> 3x American Invitational Mathematical Examination (AIME) Qualifier, USA Computing Olympiad (USACO)
+      Platinum Qualifier</p>
+  </div>
+
+  <div id="projects">
+    <div class="project">
+      <h2>Projects</h2>
+      <p>Here are my projects, in chronological order.</p>
+    </div>
+
+    <div class="project">
+      <h3>HackMIT 2023 - Reflexion Buddy</h3>
+      <div class="project-inner">
+        <div class="slideshow vid">
+          <img src="images/reflexionbuddy.png" class="hmslideshow slideelement">
+          <video controls class="slideelement hmslideshow">
+            <source
+              src="https://www.dropbox.com/scl/fi/9vzbds7hl95seua136ih9/HackMIT2023-demo-video.mp4?rlkey=pl8vlvhejcoyqm0vghkbq4448&raw=1"
+              type="video/mp4">
+          </video>
+
+          <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 7)">&#10095;</a>
+        </div>
+        <div class="description">
+          <p>Originally, our team wanted to create an AI health assistant that would provide text to speech and speech
+            to
+            text functionality to make it more accessible, but since we were unable to find suitable medical datasets,
+            we
+            instead made an AI-augmented journaling website. It can take typed and spoken input, then generated and
+            image
+            and a few responses for further reflection.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects">
+      <h3>Porta-Hooty</h3>
+      <div class="project-inner">
+        <div class="description">
+          <p>A for-fun project, I made this as a birthday gift for my younger sister. I used CAD to model the 3D printed
+            housing and created the stuffed Hooty inside.</p>
+        </div>
+        <div class="slideshow">
+
+          <img src="images/hooty.png" class="hootyslideshow slideelement">
+
+          <img src="images/portahootycad.png" class="hootyslideshow slideelement">
+
+          <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Code4Good United Planet Volunteer Page</h3>
+      <div class="project-inner">
+        <div class="slideshow">
+
+          <img src="images/up1.png" class="upslideshow slideelement">
+          <img src="images/up2.png" class="upslideshow slideelement">
+          <img src="images/up3.png" class="upslideshow slideelement">
+          <img src="images/up4.png" class="upslideshow slideelement">
+          <img src="images/up5.png" class="upslideshow slideelement">
+          <img src="images/up6.png" class="upslideshow slideelement">
+
+          <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+        </div>
+        <div class="description">
+          <p>United Planet needed a more streamlined way to onboard volunteers and ensure they complete the forms
+            needed, so
+            we made a dashboard for them. I worked on the frontend and API calls, which used Bootstrap, ReactJS, and
+            axios.</p>
+
+          <p><a href="https://github.com/tangluna/united-planet-portal">Github Here</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects">
+      <h3>dPV work</h3>
+      <div class="project-inner">
+        <div class="description">
+          <p>Benchmarked dPV (Python library for simulating solar cells) against TiberCAD and SCAPS to identify
+            issues in dPV's simulation and functionality.</p>
+        </div>
+        <div class="slideshow">
+
+          <img src="images/dpv1.png" class="tcslideshow slideelement">
+          <img src="images/dpv2.png" class="tcslideshow slideelement">
+          <img src="images/dpv3.png" class="tcslideshow slideelement">
+
+          <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>6.A01 Projects</h3>
+      <div class="project-inner">
+        <div class="slideshow">
+
+          <!--<video controls class="6a01slideshow slideelement">
+              <source src="https://www.dropbox.com/scl/fi/rvzafgikaka8ohw82nv57/IMG_7839-2.MOV?rlkey=v0bnkhl5w86boglhbg31upwz4&raw=1"
+                type="video/mp4">
+          </video>-->
+          <img src="images/simplesimonphoto.png" class="6a01slideshow slideelement">
+
+          <video controls class="6a01slideshow slideelement">
+            <source src="images/simonsimple.MOV" type="video/mp4">
+          </video>
+
+          <video controls class="6a01slideshow slideelement">
+            <source src="images/simon.MOV" type="video/mp4">
+          </video>
+
+          <video controls class="6a01slideshow slideelement">
+            <source src="images/clankers.MOV" type="video/mp4">
+          </video>
+
+          <video controls class="6a01slideshow slideelement">
+            <source src="images/motor.MOV" type="video/mp4">
+          </video>
+
+          <video controls class="6a01slideshow slideelement">
+            <source src="images/generator.MOV" type="video/mp4">
+          </video>
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <div class="description">
+          <p>In this class, I built increasingly complex versions of Simon Says, a brushless motor, and a generator
+            using an Arduino board.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Principles of Engineering Projects</h3>
+      <div class="project-inner">
+        <div class="description">
+          <p>In this class, I learned about the engineering process and gained a broad overview of many areas of the
+            field.
+            Through projects, I got to put this learning into practice.</p>
+          <p>We made a Rube Goldberg machine that puts a pencil into a pencil sharpener.</p>
+          <p>We designed and tested an insulating lid for our thermodynamics unit.</p>
+          <p>For our final project, I designed and built a hydrogen fuel cell powered boat with my team. This project
+            involved applying the physics knowledge I already knew and learning digital fabrication, namely 3D printing
+            and
+            laser cutting.</p>
+        </div>
+        <div class="slideshow">
+          <img
+            src="https://www.dropbox.com/scl/fi/wh6w4bmh6jmf3id2wxsqm/IMG_7645.JPG?rlkey=0vt83rmm2ln5fncy2mtiy4144&raw=1"
+            class="poeslideshow slideelement">
+          <img
+            src="https://www.dropbox.com/scl/fi/gx1jja3rsid1ef2fh36ns/IMG_7679.JPG?rlkey=6oosyx5wgxe7a0mnr0o0h3uly&raw=1"
+            class="poeslideshow slideelement">
+          <img
+            src="https://www.dropbox.com/scl/fi/kxwpq9q90tht77y8wfy08/IMG_8156.JPG?rlkey=hjrfcmva2bgevm17h2qb7vnsa&raw=1"
+            class="poeslideshow slideelement">
+          <img
+            src="https://www.dropbox.com/scl/fi/xvmqvlnmyd1uivimx3gh9/IMG_8797.JPG?rlkey=ypelpgj9chamy2h95bi6lfemq&raw=1"
+            class="poeslideshow slideelement">
+          <img
+            src="https://www.dropbox.com/scl/fi/pdccpc9p4wwi23y90z232/IMG_8798.JPG?rlkey=u95wvomkysgyapxxmqlxpcugk&raw=1"
+            class="poeslideshow slideelement">
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Bird-ID Discord Bot</h3>
+      <div class="project-inner">
+        <div class="slideshow">
+
+          <img src="images/birdid.png" class="bislideshow slideelement">
+          <img src="images/birdid2.png" class="bislideshow slideelement">
+
+          <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+        </div>
+        <div class="description">
+          <p>In the 2020-2022 Science Olympiad cycles, the event Ornithology had a cult following. Because there were no
+            good ways to practice identifying birds at the time, a friend and I made Bird-ID Bot as a fun way to help
+            student study for Ornithology. It has been used by over 1000 users and has been adapted into other ID event
+            bots
+            (Fossils, Rocks and Minerals), although I was not involved with the expansion.</p>
+          <p><a href="https://github.com/tctree333/Bird-ID">Github here</a></p>
+          <p><a href="https://sciolyid.org">Website here</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Science Olympiad</h3>
+      <div class="project-inner">
+        <div class="description">
+          <p>A variety of knicknacks I made for Science Olympiad. 2 glockenspiels and a home page for our Science
+            Olympiad team.</p>
+          <p><a href="https://ahs-scioly.org/teammembers.html">See the website here.</a></p>
+
+          <h4>See all the tests I have written here:</h4>
+          <ul>
+            <li><a href="https://drive.google.com/drive/folders/1Bnwwt8IR95MLqaqZmCzsFv_48o3K-UrT?usp=share_link">MITSO Disease Detectives 2023</a></li>
+            <li><a href = "https://drive.google.com/drive/folders/1tH_1YD9BawqjwtNhvuq1tSCWicuzVOO3?usp=share_link">BirdSO Disease Detectives B 2023</a></li>
+            <li><a href = "https://drive.google.com/drive/folders/1aiKNqDuFIsKHJLQwkpqwRvy32oVWYd-U?usp=share_link">BirdSO Sounds of Music B 2022</a></li>
+            <li><a href = "https://drive.google.com/drive/folders/1bEc435pGEtvzzm0Tyt2PJIsWD76KDrNs?usp=share_link">BirdSO Disease Detectives B 2022</a></li>
+          </ul>
+        </div>
+
+        <div class="slideshow">
+          <img
+            src="https://www.dropbox.com/scl/fi/jash0so3p1r9aicggft7g/IMG_8384.JPG?rlkey=8gkw8dl88sqfkb7yic34m1hlw&raw=1"
+            class="soslideshow slideelement">
+
+          <video controls class="soslideshow slideelement">
+            <source
+              src="https://www.dropbox.com/scl/fi/phewg6z4ryrmahggq19mt/IMG_8200.MOV?rlkey=lwpwvprw7nysd5a6v2tmtoyk4&raw=1"
+              type="video/mp4">
+          </video>
+
+          <img src="images/ahssciopage.png" class="soslideshow slideelement">
+          <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+
+          <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="splash">
+    <h2>Contact</h2>
+    <div id="contact-content">
+      <p><a href="https://github.com/erasedbird">Github</a></p>
+      <p><a href="mailto:ruthluvu@mit.edu">Email</a></p>
+      <p><a href="https://www.linkedin.com/in/ruth-lu-6a20051b2/">LinkedIn</a></p>
+    </div>
+    <p>Created by Ruth Lu © 2023</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
